@@ -69,7 +69,7 @@ h4{
 .todo .delete-todo{
   position: absolute;
   top: 50%;
-  right: 165px;
+  right: 50px;
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
