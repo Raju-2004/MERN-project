@@ -1,10 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+// require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin:['http://localhost:3000',"https://mern-todo-app.render.com"],}));
+
 
 mongoose
   .connect(
@@ -54,4 +56,4 @@ app.get('/todo/complete/:id',async(req,res)=>{
     res.json(todo);
 })
 
-app.listen(3001, () => console.log("server started on port 3001"));
+app.listen(3001 , () => console.log("server started on port 3001"));
