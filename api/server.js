@@ -1,11 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-// require('dotenv').config();
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
-app.use(cors({origin:['http://localhost:3000',"https://mern-todo-app.render.com"],}));
+app.use(cors());
 
 
 mongoose

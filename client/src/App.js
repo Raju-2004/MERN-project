@@ -1,6 +1,7 @@
 // import "./App.css";
 import { useState, useEffect } from "react";
-const API_BASE = "http://localhost:3001";
+// const API_BASE = "http://localhost:3001";
+const API_BASE = "https://mern-todo-app-api-prcv.onrender.com"
 function App() {
   const [todos, setTodos] = useState([]);
   const [popupActive, setPopupActive] = useState(false);
